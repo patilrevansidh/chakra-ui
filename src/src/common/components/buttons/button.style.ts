@@ -6,27 +6,32 @@ import styled from "styled-components";
 export const variants = {
   solid: "solid",
   outline: "outline",
-  ghost: "ghost",
-  link: "link",
-};
-export const bg = {
-  primary: "solid",
-  secondary: "secondary",
-  danger: "ghost",
+  // ghost: "ghost",
+  // link: "link",
 };
 
+/**
+ * bg
+ *  primary
+ *  seconday
+ *  outline-coor
+ */
+
 export const StyledButton = styled(Button)`
-  background-color: primary;
+  background-color: ${props=>{
+    const clr = props.variant ==='solid' ? 'primary' : 'white';
+    return `${clr} !important`
+  }} ;
   color: white;
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   padding: 7px 14px;
   ${(props) => {
     const {bg = 'primary' } =props;
     console.log(props);
-    const bgColor = bg;
+    // const bgColor = bg;
     return `
     &:hover {
-      background-color: ${COLORS_CONSTANT.primary} !important;
+      background-color: ${'red'} !important;
     };
     &:focus {
       box-shadow: none !important;

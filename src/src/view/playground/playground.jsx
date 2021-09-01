@@ -5,7 +5,7 @@ import { StyledButton, bg } from '../../common/components/buttons/button.style.t
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <StyledButton bg={bg.pr} variant='solid'>
+      <StyledButton bg={'primary'} variant='outline'>
         Button
       </StyledButton>
     </ChakraProvider>

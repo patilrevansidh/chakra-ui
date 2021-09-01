@@ -4,9 +4,9 @@ import { StyledButton as Button } from "../common/components/buttons/button.styl
 
 const theme = extendTheme({
   colors: {
-    primary: COLORS_CONSTANT.primary,
+    primary: "#facd00",
     secondary: "#845EC2",
-    
+    white:'#fff'
   },
   // components: {
   //   // Button, // Has to match to the name of the component
